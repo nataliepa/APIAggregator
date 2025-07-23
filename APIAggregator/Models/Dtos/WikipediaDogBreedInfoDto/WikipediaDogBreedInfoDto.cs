@@ -1,4 +1,4 @@
-﻿namespace APIAggregator.Models.Dtos;
+﻿namespace APIAggregator.Models.Dtos.WikipediaDogBreedInfoDto;
 
 public class WikipediaDogBreedInfoDto
 {

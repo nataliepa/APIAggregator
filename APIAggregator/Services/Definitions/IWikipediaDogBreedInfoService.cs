@@ -1,4 +1,5 @@
 ﻿using APIAggregator.Models.Dtos;
+using APIAggregator.Models.Dtos.WikipediaDogBreedInfoDto;
 
 namespace APIAggregator.Services.Definitions;
 

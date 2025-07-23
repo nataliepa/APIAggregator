@@ -1,4 +1,5 @@
 ﻿using APIAggregator.Models.Dtos;
+using APIAggregator.Models.Dtos.DogBreed;
 using APIAggregator.Models.Entities.DogBreed;
 using AutoMapper;
 

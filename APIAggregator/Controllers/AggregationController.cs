@@ -25,23 +25,17 @@ public class AggregationController : ControllerBase
     [ProducesResponseType(typeof(List<AggregatedDogBreedInfoDto>), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<ActionResult<List<AggregatedDogBreedInfoDto?>>> GetDogBreeds(
-        [FromQuery] int page = 1,
-        string? name = null,
-        bool? hypoallergenic = null,
-        string? breedGroup = null,
-        string? temperament = null
-        )
+    public async Task<ActionResult<List<AggregatedDogBreedInfoDto?>>> GetDogBreeds([FromQuery] DogBreedFilterDto filter)
     {
         try
         {
-            var result = await _dogAggregatorService.GetAggregatedDogInfo(page);
+            var result = await _dogAggregatorService.GetAggregatedDogInfo(filter);
 
             return Ok(result);
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "An error occurred while retrieving aggregated dog data for page {Page}", page);
+            _logger.LogError(ex, "An error occurred while retrieving aggregated dog data for page {Page}", filter.Page);
             return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
         }
     }

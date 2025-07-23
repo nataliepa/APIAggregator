@@ -4,5 +4,5 @@ namespace APIAggregator.Services.Definitions;
 
 public interface IDogAggregatorService
 {
-    Task<AggregatedDogBreedResponseDto> GetAggregatedDogInfo(int page);
+    Task<AggregatedDogBreedResponseDto> GetAggregatedDogInfo(DogBreedFilterDto filter);
 }

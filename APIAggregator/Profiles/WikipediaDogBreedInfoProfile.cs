@@ -1,4 +1,5 @@
 ﻿using APIAggregator.Models.Dtos;
+using APIAggregator.Models.Dtos.WikipediaDogBreedInfoDto;
 using APIAggregator.Models.Entities.WikipediaDogSummary;
 using AutoMapper;
 

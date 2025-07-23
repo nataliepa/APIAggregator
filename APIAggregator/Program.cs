@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddMemoryCache();
 builder.Services.AddScoped<IDogService, DogService>();
 builder.Services.AddScoped<IDogCeoImageService, DogCeoImageService>();
 builder.Services.AddScoped<IDogAggregatorService, DogAggregatorService>();
