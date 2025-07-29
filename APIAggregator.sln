@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIAggregator", "APIAggregator\APIAggregator.csproj", "{251FDD7C-8EAA-4F37-A10F-4231304788FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{59FAAE49-D7C9-419D-8F93-49858B76C809}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +15,9 @@ Global
 		{251FDD7C-8EAA-4F37-A10F-4231304788FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{251FDD7C-8EAA-4F37-A10F-4231304788FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{251FDD7C-8EAA-4F37-A10F-4231304788FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59FAAE49-D7C9-419D-8F93-49858B76C809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FAAE49-D7C9-419D-8F93-49858B76C809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FAAE49-D7C9-419D-8F93-49858B76C809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FAAE49-D7C9-419D-8F93-49858B76C809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

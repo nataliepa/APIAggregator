@@ -1,7 +1,10 @@
-﻿namespace APIAggregator.Models.Dtos;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace APIAggregator.Models.Dtos;
 
 public class DogBreedFilterDto
 {
+    [Range(1, int.MaxValue, ErrorMessage = "Page must be greater than 0")]
     public int Page { get; set; } = 1;
     public string? Name { get; set; }
     public bool? Hypoallergenic { get; set; }

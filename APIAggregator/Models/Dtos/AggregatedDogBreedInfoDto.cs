@@ -1,5 +1,8 @@
-﻿using APIAggregator.Models.Dtos.DogBreed;
+﻿
+using APIAggregator.Models.Dtos.DogBreed;
 using APIAggregator.Models.Dtos.DogBreedCeoImageDto;
+using APIAggregator.Models.Dtos.DogBreedExtraInfoDto;
+using APIAggregator.Models.Dtos.WikipediaDogBreedInfoDto;
 
 namespace APIAggregator.Models.Dtos;
 

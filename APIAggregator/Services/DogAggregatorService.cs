@@ -35,6 +35,7 @@ public class DogAggregatorService : IDogAggregatorService
     {
         var breedApiResult = await _dogService.GetDogBreeds(filter.Page);
         var breeds = breedApiResult.Breeds;
+        
         var result = new List<AggregatedDogBreedInfoDto>();
         
         if (!string.IsNullOrWhiteSpace(filter.Name))
